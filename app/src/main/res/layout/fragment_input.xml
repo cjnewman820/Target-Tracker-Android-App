@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252424"
+    android:backgroundTint="#252424"
+    tools:context=".InputFragment">
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="637dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvEnterRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Range"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sbRange"
+            android:layout_width="176dp"
+            android:layout_height="33dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCapture"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:onClick="onCaptureClick"
+            android:text="View Camera" />
+
+        <ImageView
+            android:id="@+id/imageViewTarget"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            tools:src="@tools:sample/avatars" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

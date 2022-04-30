@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252424"
+    tools:context=".TrackingFragment">
+
+    <TextView
+        android:id="@+id/tvRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="Range: 15 yds"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewCamera"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="onViewCameraClick"
+        android:text="View Camera"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shotCount" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGroup"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="onShotClick"
+        android:text="Change Group"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnManual" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="342dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ListView
+        android:id="@+id/shotHistory"
+        android:layout_width="192dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shotCount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/shotCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Shot Count: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnManual"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="onShotClick"
+        android:text="Input Shot"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewCamera" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReset"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="onResetClick"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/tvRange"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/sbRange"
+        android:layout_width="176dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shotHistory"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRange"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="276dp"
+        android:layout_height="18dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shotHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shotCount"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

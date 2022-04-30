@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnDiscoverable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252424"
+    android:backgroundTint="#252424"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="313dp"
+        android:layout_height="550dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/tvBluetoothFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Bluetooth"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEnableBT"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:text="Enable Bluetooth" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDiscoverable_on_off"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+
+                android:text="Enable/Disable Discoverability" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFindUnpairedDevices"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+
+            android:text="Discover" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/tvDiscoverInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textColor="#FFFFFF"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConnect"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Connect to Tracker" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/tvConnectionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:text="Start" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStop"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:text="Stop" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReboot"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+
+            android:text="Reboot" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
